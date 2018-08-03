@@ -46,6 +46,7 @@ function QuickBooks(consumerKey, consumerSecret, token, tokenSecret, realmId, us
     this.realmId         = eval(prefix + 'realmId')
     this.useSandbox      = eval(prefix + 'useSandbox')
     this.debug           = eval(prefix + 'debug')
+    
     this.endpoint        = this.useSandbox ? QuickBooks.V3_ENDPOINT_BASE_URL : QuickBooks.V3_ENDPOINT_BASE_URL.replace('sandbox-', '')
     this.paymentEndpoint = this.useSandbox ? QuickBooks.PAYMENTS_API_BASE_URL : QuickBooks.PAYMENTS_API_BASE_URL.replace('sandbox.', '')
 }
